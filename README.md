@@ -1,6 +1,9 @@
 # nfb-assets-tools
 Not For Broadcast Assets Tools
 
+Space needed in your disk :
+When you going to use the script, extract the assets etc. The assets will be replicated three times. So, you need 120Go for the extraction and conversion to mkv and mp4.
+But, at the end, you need 40Go with only mp4 files.
 
 How to use:
 
