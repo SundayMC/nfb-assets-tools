@@ -17,9 +17,7 @@ def uno():
         if audiofile=="Pre-Roll-Loop Level 01 -.wav":
             os.rename(rf'audio\AudioClip\\Pre-Roll-Loop Level 01 - Processed.wav',rf'audio\AudioClip\\Pre-Roll-Loop Level 01 -.wav')
         else:
-            audiofile=audiofile.split('\\')[-1]
-            audiofile=audiofile.split('.wav.wav')[0]
-            audiofile=f"{audiofile}.wav"
+            audiofile=audiofile.split(' Audio')[0]
             allaudiofilesnamewithout.append(audiofile)
     for i in range(len(allaudiofilesname)):
         if i==841:
