@@ -14,8 +14,8 @@ def uno():
 
     allaudiofilesnamewithout=[]
     for audiofile in allaudiofilesname:
-        if audiofile=="Pre-Roll-Loop Level 01 -.wav":
-            os.rename(rf'audio\AudioClip\\Pre-Roll-Loop Level 01 - Processed.wav',rf'audio\AudioClip\\Pre-Roll-Loop Level 01 -.wav')
+        if audiofile=="Pre-Roll-Loop Level 01 - Processed.wav":
+            pass
         else:
             audiofile=audiofile.split(' Audio')[0]
             allaudiofilesnamewithout.append(audiofile)
@@ -36,6 +36,9 @@ def uno():
 
     allaudiofilesname.sort()
 
+    os.makedirs(name=rf"exportmkv")
+    os.makedirs(name=rf"exportmp4")
+
 def dos():
     allaudiofiles=glob('audio\AudioClip\*.wav')
 
@@ -43,7 +46,7 @@ def dos():
     for audiofile in allaudiofiles:
         audiofile=audiofile.split('\\')[-1]
         allaudiofilesname.append(audiofile)
-    print(len(allaudiofilesname))
+    allaudiofilesname.sort()
 
     allvideofiles=glob('video\VideoClip\*.mp4')
     allvideofilesname=[]
@@ -52,8 +55,6 @@ def dos():
         allvideofilesname.append(videofile)
 
     allvideofilesname.sort()
-
-    allaudiofilesname[3],allaudiofilesname[4],allaudiofilesname[2]=allaudiofilesname[2],allaudiofilesname[3],allaudiofilesname[4]
 
     for finalfile in range(len(allvideofilesname)):
         try:
