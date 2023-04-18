@@ -1,4 +1,7 @@
 # nfb-assets-tools
+
+*This tools doesn't support the assets of the DLC*
+
 Not For Broadcast Assets Tools
 
 ## Space needed in your disk :
